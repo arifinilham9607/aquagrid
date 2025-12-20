@@ -2,20 +2,25 @@
     <div class="py-12 bg-slate-50 min-h-screen">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-10">
             
-            <div class="text-center space-y-2">
-                <div class="inline-flex items-center justify-center space-x-3 mb-2">
-                    <div class="w-12 h-1.5 bg-indigo-600 rounded-full"></div>
-                    <h1 class="text-4xl font-black text-slate-900 tracking-tighter uppercase italic">AQUAGRID MONITORING</h1>
-                    <div class="w-12 h-1.5 bg-indigo-600 rounded-full"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-10">
+                <div class="order-2 md:order-1">
+                    <a href="{{ url('/') }}" class="inline-flex items-center gap-2 text-[10px] font-mono font-black text-slate-400 border border-slate-200 px-4 py-2 rounded-full hover:bg-slate-800 hover:text-white hover:border-slate-800 transition-all group">
+                        <span class="group-hover:-translate-x-1 transition-transform">←</span> 
+                        SYSTEM_HOME
+                    </a>
                 </div>
-                <p class="text-slate-400 font-bold text-xs uppercase tracking-[0.4em]">Optimizing High-Grade Milkfish Seed Quality</p>
-            </div>
 
-<div class="flex justify-end p-4">
-    <a href="{{ url('/') }}" class="text-[10px] font-mono font-black text-slate-500 border border-slate-700 px-3 py-1 rounded hover:bg-slate-800 hover:text-white transition">
-        PUBLIC_VIEW_LINK // RETURN_HOME
-    </a>
-</div>
+                <div class="text-center space-y-2 order-1 md:order-2 flex-1">
+                    <div class="inline-flex items-center justify-center space-x-3">
+                        <div class="w-8 h-1.5 bg-indigo-600 rounded-full hidden sm:block"></div>
+                        <h1 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tighter uppercase italic">AQUAGRID MONITORING</h1>
+                        <div class="w-8 h-1.5 bg-indigo-600 rounded-full hidden sm:block"></div>
+                    </div>
+                    <p class="text-slate-400 font-bold text-[10px] uppercase tracking-[0.4em]">Optimizing High-Grade Milkfish Seed Quality</p>
+                </div>
+
+                <div class="hidden md:block md:w-32 order-3"></div>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 @foreach($dataSensor as $pondName => $sensor)
