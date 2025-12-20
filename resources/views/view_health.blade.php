@@ -1,104 +1,95 @@
 <x-guest-layout>
-    <div class="fixed inset-0 bg-[#0a0f1d] z-0"></div>
-
-    <div class="relative z-10 min-h-screen flex flex-col font-sans text-slate-300">
+    <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-black text-slate-800 tracking-tighter uppercase italic">
+            AQUA<span class="text-indigo-600">GRID</span>
+            <span class="ml-2 text-[10px] not-italic font-mono text-slate-400">HEALTH_v12.43.1</span>
+        </div>
         
-        <nav class="w-full bg-[#0f172a] border-b border-slate-800 p-6 shadow-2xl">
-            <div class="max-w-[1600px] mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between gap-8">
-                <div class="flex items-center gap-3 pr-8 border-r border-slate-800">
-                    <div class="w-3 h-3 bg-cyan-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(6,182,212,0.8)]"></div>
-                    <h2 class="text-xl font-black text-white tracking-tighter uppercase italic">AQUAGRID <span class="text-cyan-500 text-xs font-mono not-italic ml-2">v12.43.1</span></h2>
-                </div>
+        <div class="space-x-4">
+            <a href="{{ url('/') }}" class="text-xs font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition">
+                ← Return Home
+            </a>
+        </div>
+    </nav>
 
-                <div class="flex-grow grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
-                    <div>
-                        <p class="text-[9px] text-slate-500 uppercase font-black tracking-widest mb-1">Architecture</p>
-                        <p class="text-white font-mono text-xs">Laravel 12 (MVC)</p>
-                    </div>
-                    <div>
-                        <p class="text-[9px] text-slate-500 uppercase font-black tracking-widest mb-1">Runtime</p>
-                        <p class="text-white font-mono text-xs">PHP 8.2.30</p>
-                    </div>
-                    <div>
-                        <p class="text-[9px] text-slate-500 uppercase font-black tracking-widest mb-1">Database</p>
-                        <p class="text-white font-mono text-xs">MySQL 9.4.0</p>
-                    </div>
-                    <div>
-                        <p class="text-[9px] text-slate-500 uppercase font-black tracking-widest mb-1">Cloud Host</p>
-                        <p class="text-emerald-400 font-mono text-xs font-bold uppercase tracking-tighter italic">Railway_Deploy</p>
-                    </div>
-                </div>
-
-                <a href="{{ url('/') }}" class="text-[10px] font-mono font-black text-cyan-500 border border-cyan-500/30 px-6 py-2.5 rounded hover:bg-cyan-500 hover:text-slate-950 transition-all uppercase tracking-widest">
-                    Return_to_Dashboard
-                </a>
+    <main class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[70vh] py-12">
+        
+        <div class="space-y-8">
+            <div class="inline-block px-4 py-2 bg-emerald-100 text-emerald-700 text-[10px] font-black rounded-full uppercase tracking-[0.2em]">
+                System Operational Status: Active
             </div>
-        </nav>
+            
+            <h1 class="text-6xl lg:text-7xl font-black text-slate-900 leading-none tracking-tighter uppercase italic">
+                SYSTEM<br><span class="text-indigo-600">HEALTH.</span>
+            </h1>
 
-        <main class="flex-grow p-6 md:p-10 max-w-[1600px] mx-auto w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                
-                <div class="lg:col-span-4 flex flex-col justify-center space-y-4 pr-6">
-                    <h3 class="text-5xl font-black text-white leading-none tracking-tighter uppercase italic">System<br><span class="text-indigo-500">Health</span><br>Monitor.</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed font-medium">
-                        Live diagnostic environment monitoring performance metrics, security protocols, and infrastructure stability for AQUAGRID aquaculture systems.
-                    </p>
-                    <div class="pt-4 flex gap-3">
-                        <span class="px-3 py-1 bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 text-[9px] font-black uppercase tracking-widest rounded">Operational</span>
-                        <span class="px-3 py-1 bg-cyan-500/10 text-cyan-500 border border-cyan-500/20 text-[9px] font-black uppercase tracking-widest rounded">Secure</span>
-                    </div>
+            <div class="grid grid-cols-2 gap-4 pt-4">
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Backend</p>
+                    <p class="text-sm font-bold text-slate-800">Laravel 12.43.1</p>
                 </div>
-
-                <div class="lg:col-span-4 bg-[#0f172a] rounded-3xl border border-slate-800 shadow-2xl flex flex-col overflow-hidden">
-                    <div class="bg-slate-800/50 px-5 py-3 flex justify-between items-center border-b border-slate-800">
-                        <span class="text-[9px] font-mono text-slate-400 font-bold uppercase">Production_Metrics</span>
-                        <div class="flex gap-1">
-                            <div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
-                        </div>
-                    </div>
-                    <div class="p-8 space-y-8 flex-grow flex flex-col justify-center">
-                        <div>
-                            <div class="flex justify-between text-[9px] uppercase text-slate-500 font-black tracking-widest mb-3">
-                                <span>Network Latency</span>
-                                <span class="text-cyan-400 font-mono">24ms</span>
-                            </div>
-                            <div class="h-1.5 bg-slate-950 rounded-full border border-slate-800 overflow-hidden">
-                                <div class="bg-cyan-500 h-full w-[64%] shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-slate-950/50 p-4 rounded-2xl border border-slate-800">
-                                <span class="block text-[8px] text-slate-500 uppercase font-black mb-1 italic">Uptime</span>
-                                <span class="text-white font-mono text-xl font-bold">99.9%</span>
-                            </div>
-                            <div class="bg-slate-950/50 p-4 rounded-2xl border border-slate-800">
-                                <span class="block text-[8px] text-slate-500 uppercase font-black mb-1 italic">Traffic</span>
-                                <span class="text-white font-mono text-xl font-bold">Stable</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Server</p>
+                    <p class="text-sm font-bold text-emerald-600">Railway Cloud</p>
                 </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Database</p>
+                    <p class="text-sm font-bold text-slate-800">MySQL 9.4.0</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p class="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-1">Security</p>
+                    <p class="text-sm font-bold text-indigo-600">RBAC Enabled</p>
+                </div>
+            </div>
 
-                <div class="lg:col-span-4 bg-indigo-600/5 rounded-3xl border border-indigo-500/10 p-8 flex flex-col justify-center">
-                    <h4 class="text-xs font-black text-indigo-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <div class="w-1 h-4 bg-indigo-500"></div> Security Layer
-                    </h4>
-                    <p class="text-xs leading-relaxed text-slate-400 mb-6">
-                        System protected by <span class="text-white">CSRF Defense</span> and <span class="text-white">RBAC Middleware</span>. User authentication utilizes industry-standard Bcrypt hashing protocols to ensure data integrity.
-                    </p>
-                    <div class="space-y-3">
-                        <div class="flex items-center gap-3 text-[10px] font-bold text-slate-300 bg-slate-900/50 p-3 rounded-xl border border-slate-800/50">
-                            <svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
-                            SSL/HTTPS_ENFORCED
+            <p class="text-sm text-slate-500 font-medium leading-relaxed max-w-md">
+                AQUAGRID infrastructure uses a monolithic MVC architecture with automated CI/CD pipelines, ensuring 99.9% uptime for aquaculture monitoring.
+            </p>
+        </div>
+
+        <div class="relative h-[500px] flex items-center justify-center lg:justify-end">
+            
+            <div class="absolute -z-10 w-80 h-80 bg-indigo-200 rounded-full blur-[120px] opacity-30"></div>
+
+            <div class="absolute z-10 transform -rotate-6 -translate-x-16 translate-y-12 w-64 lg:w-72 bg-white p-6 rounded-[2.5rem] shadow-2xl border border-slate-100 transition-all duration-500 hover:rotate-0">
+                <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4 italic">Performance</p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-[9px] font-bold mb-1">
+                            <span>Network Load</span>
+                            <span class="text-cyan-500 italic">Stable</span>
                         </div>
-                        <div class="flex items-center gap-3 text-[10px] font-bold text-slate-300 bg-slate-900/50 p-3 rounded-xl border border-slate-800/50">
-                            <svg class="w-3.5 h-3.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
-                            MIDDLEWARE_PROTECTED
+                        <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="bg-cyan-500 h-full w-[65%]"></div>
                         </div>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <span class="text-2xl font-black text-slate-800">24<span class="text-xs ml-1 uppercase text-slate-400">ms</span></span>
+                        <span class="text-[9px] font-black text-emerald-500 uppercase">Latency</span>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+
+            <div class="relative z-20 transform rotate-3 -translate-y-12 w-full max-w-[320px] bg-slate-900 p-8 rounded-[3rem] shadow-2xl transition-all duration-500 hover:rotate-0">
+                <div class="absolute -top-4 -right-4 bg-indigo-600 px-6 py-3 rounded-2xl shadow-xl">
+                    <p class="text-[10px] font-black text-white uppercase tracking-widest">Secure_Layer</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xs font-black text-white uppercase tracking-widest">Encryption Protocols</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-[10px] text-slate-400 font-bold">
+                            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div> CSRF_DEFENSE_ACTIVE
+                        </li>
+                        <li class="flex items-center gap-2 text-[10px] text-slate-400 font-bold">
+                            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div> BCrypt_HASH_SALTING
+                        </li>
+                        <li class="flex items-center gap-2 text-[10px] text-slate-400 font-bold">
+                            <div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div> HTTPS_REDIRECT
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </x-guest-layout>
