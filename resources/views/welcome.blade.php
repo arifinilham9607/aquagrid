@@ -25,6 +25,18 @@
     </nav>
 
     <main class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[70vh]">
+    <x-guest-layout>
+    <div class="fixed inset-0 z-0">
+        <img src="{{ asset('images/bg-welcome.png') }}" 
+             class="w-full h-full object-cover" 
+             alt="Background">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="relative z-10 min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        
+        </div>
+</x-guest-layout>
     <div class="space-y-8">
         <div class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 text-[10px] font-black rounded-full uppercase tracking-[0.2em]">
             Smart Aquaculture Solutions

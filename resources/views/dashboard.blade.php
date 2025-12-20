@@ -11,6 +11,12 @@
                 <p class="text-slate-400 font-bold text-xs uppercase tracking-[0.4em]">Optimizing High-Grade Milkfish Seed Quality</p>
             </div>
 
+<div class="flex justify-end p-4">
+    <a href="{{ url('/') }}" class="text-[10px] font-mono font-black text-slate-500 border border-slate-700 px-3 py-1 rounded hover:bg-slate-800 hover:text-white transition">
+        PUBLIC_VIEW_LINK // RETURN_HOME
+    </a>
+</div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 @foreach($dataSensor as $pondName => $sensor)
                 <div class="bg-white rounded-[3rem] shadow-2xl shadow-indigo-100/40 border border-slate-100 overflow-hidden relative group transition-all duration-500 hover:-translate-y-3">
