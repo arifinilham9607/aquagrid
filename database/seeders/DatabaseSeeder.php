@@ -19,5 +19,10 @@ public function run(): void
     $this->call([
         PenggunaSeeder::class,
     ]);
+    {
+    $this->call([
+        AquagridSeeder::class,
+    ]);
+}
 }
 }
