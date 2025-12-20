@@ -63,4 +63,7 @@ Route::get('/create', function () {
     return view('create');
 })->name('create');
 Route::put('/pengguna/{id}', [PenggunaController::class, 'update'])->name('users.update');
+Route::get('/analytics', function () {
+    return view('analytics');
+})->name('analytics');
 require __DIR__.'/auth.php';

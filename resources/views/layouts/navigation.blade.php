@@ -17,9 +17,14 @@
                         {{ __('Alert Settings') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('analytics')" :active="request()->routeIs('pengguna.*')" class="text-[10px] font-black uppercase tracking-[0.2em]">
+                         {{ __('Analytics') }}
+                    </x-nav-link>
+
                     <x-nav-link :href="route('pengguna.index')" :active="request()->routeIs('pengguna.*')" class="text-[10px] font-black uppercase tracking-[0.2em]">
                         {{ __('User Management') }}
                     </x-nav-link>
+
                 </div>
             </div>
 
