@@ -39,7 +39,7 @@
             <a href="{{ route('guidelines') }}" class="px-10 py-5 bg-indigo-600 text-white font-black text-xs uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-2xl shadow-indigo-100 active:scale-95 text-center">
                 Get Started
             </a>
-            <a href="/special-thanks" class="px-10 py-5 bg-white text-slate-700 border border-slate-200 font-black text-xs uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-50 transition-all shadow-lg active:scale-95 text-center">
+            <a href="/health" class="px-10 py-5 bg-white text-slate-700 border border-slate-200 font-black text-xs uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-50 transition-all shadow-lg active:scale-95 text-center">
                 View System Health
             </a>
         </div>
@@ -54,18 +54,18 @@
              class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-[3rem] shadow-2xl border-4 border-white transition-all duration-500 group-hover:rotate-0"
              onerror="this.src='https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?auto=format&fit=crop&w=500&q=80'">
         <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-2xl shadow-sm">
-            <p class="text-[9px] font-black text-indigo-600 uppercase tracking-widest text-center">Mi Amour</p>
+            <p class="text-[9px] font-black text-indigo-600 uppercase tracking-widest text-center">Achievement</p>
         </div>
     </div>
 
-    <div class="relative z-20 transform rotate-3 -translate-x-4 -translate-y-8 group">
-        <img src="{{ asset('images/blockdiagram.png') }}" 
-             class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-[3rem] shadow-2xl border-8 border-white transition-all duration-500 group-hover:rotate-0"
-             onerror="this.src='https://images.unsplash.com/photo-1524704659694-9f754a17494a?auto=format&fit=crop&w=500&q=80'">
-        <div class="absolute -top-4 -right-4 bg-indigo-600 px-6 py-3 rounded-2xl shadow-xl shadow-indigo-200">
-            <p class="text-[10px] font-black text-white uppercase tracking-widest text-center">Princess</p>
-        </div>
+    <div class="relative z-20 transform rotate-2 -translate-x-4 -translate-y-8 group w-full">
+    <img src="{{ asset('images/blockdiagram.png') }}" 
+         class="w-full h-48 lg:h-64 object-cover rounded-[2rem] shadow-2xl border-8 border-white transition-all duration-500 group-hover:rotate-0"
+         onerror="this.src='https://images.unsplash.com/photo-1524704659694-9f754a17494a?auto=format&fit=crop&w=800&q=80'">
+    <div class="absolute -top-4 -right-4 bg-indigo-600 px-6 py-3 rounded-2xl shadow-xl shadow-indigo-200">
+        <p class="text-[10px] font-black text-white uppercase tracking-widest text-center">System Architecture</p>
     </div>
+</div>
 
 </div>
     </main>

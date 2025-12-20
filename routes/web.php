@@ -53,8 +53,8 @@ Route::middleware('auth')->group(function () {
     // Rute ini otomatis mencakup pengguna.index, pengguna.create, pengguna.store, dll.
     Route::resource('pengguna', PenggunaController::class);
 });
-Route::get('/View-health', function () {
-    return view('view-health');
+Route::get('/health', function () {
+    return view('view_health');
     })->name('system.health');
 Route::get('/guidelines', function () {
     return view('guidelines');
