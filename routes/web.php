@@ -53,13 +53,14 @@ Route::middleware('auth')->group(function () {
     // Rute ini otomatis mencakup pengguna.index, pengguna.create, pengguna.store, dll.
     Route::resource('pengguna', PenggunaController::class);
 });
-Route::get('/special-thanks', function () {
-    return view('special');
-});
+Route::get('/View-health', function () {
+    return view('view-health');
+    })->name('system.health');
 Route::get('/guidelines', function () {
     return view('guidelines');
 })->name('guidelines');
 Route::get('/create', function () {
     return view('create');
 })->name('create');
+Route::put('/pengguna/{id}', [PenggunaController::class, 'update'])->name('users.update');
 require __DIR__.'/auth.php';

@@ -40,7 +40,7 @@
                 Get Started
             </a>
             <a href="/special-thanks" class="px-10 py-5 bg-white text-slate-700 border border-slate-200 font-black text-xs uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-50 transition-all shadow-lg active:scale-95 text-center">
-                View Inspiration 💖
+                View System Health
             </a>
         </div>
         </div>
@@ -59,7 +59,7 @@
     </div>
 
     <div class="relative z-20 transform rotate-3 -translate-x-4 -translate-y-8 group">
-        <img src="{{ asset('images/hero-images.jpeg') }}" 
+        <img src="{{ asset('images/blockdiagram.png') }}" 
              class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-[3rem] shadow-2xl border-8 border-white transition-all duration-500 group-hover:rotate-0"
              onerror="this.src='https://images.unsplash.com/photo-1524704659694-9f754a17494a?auto=format&fit=crop&w=500&q=80'">
         <div class="absolute -top-4 -right-4 bg-indigo-600 px-6 py-3 rounded-2xl shadow-xl shadow-indigo-200">
