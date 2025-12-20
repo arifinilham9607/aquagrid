@@ -59,28 +59,27 @@ public function store(Request $request)
     }
     
     // UPDATE (PROCESS): Memproses dan menyimpan perubahan data
-    public function update(Request $request, string $id)
+public function update(Request $request, $id)
 {
-    // PROTEKSI: Jika bukan admin, tendang keluar!
-    if (auth()->user()->role !== 'admin') {
-        return redirect()->back()->with('error', 'Akses Ditolak! Anda bukan Admin.');
-    }
-
+    $user = User::findOrFail($id);
+    
     $request->validate([
-        'name'  => 'required|string|min:5|max:255',
-        'email' => 'required|email|unique:users,email,' . $id,
-        'role'  => 'required|in:admin,staf',
-        'password' => 'nullable|min:8', 
+        'name' => 'required',
+        'email' => 'required|email|unique:users,email,'.$id,
     ]);
 
-    $user = \App\Models\User::findOrFail($id);
-    
-    // ... sisa kode update Anda ...
+    $user->name = $request->name;
+    $user->email = $request->email;
+
+    if ($request->filled('password')) {
+        $user->password = Hash::make($request->password);
+    }
+
     $user->save();
 
-    return redirect()->back()->with('success', 'User berhasil diperbarui!');
+    // PERBAIKAN DI SINI: Ganti 'users.index' menjadi 'pengguna.index'
+    return redirect()->route('pengguna.index')->with('success', 'Data berhasil diperbarui!');
 }
-
     // DELETE: Menghapus data
     public function destroy(string $id)
 {
