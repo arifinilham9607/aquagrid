@@ -24,51 +24,51 @@
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[70vh]">
-    
-    <div class="space-y-8">
-        <div class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 text-[10px] font-black rounded-full uppercase tracking-[0.2em]">
-            Smart Aquaculture Solutions
-        </div>
-        <h1 class="text-6xl lg:text-8xl font-black text-slate-900 leading-none tracking-tighter uppercase italic">
-            AQUA<br><span class="text-indigo-600">GRID.</span>
-        </h1>
-        <p class="text-lg text-slate-500 font-medium max-w-md leading-relaxed">
-            Real-time water parameter monitoring system designed to produce premium quality milkfish seeds with high survival rates.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-            <a href="{{ route('guidelines') }}" class="px-10 py-5 bg-indigo-600 text-white font-black text-xs uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition-all shadow-2xl shadow-indigo-100 active:scale-95 text-center">
-                Get Started
-            </a>
-            <a href="/health" class="px-10 py-5 bg-white text-slate-700 border border-slate-200 font-black text-xs uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-50 transition-all shadow-lg active:scale-95 text-center">
-                View System Health
-            </a>
-        </div>
+<main class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[70vh] py-12">
+        
+        <div class="relative h-[400px] md:h-[500px] flex items-center justify-center lg:justify-end order-1 lg:order-2 scale-90 md:scale-100">
+            
+            <div class="absolute -z-10 w-64 h-64 md:w-80 md:h-80 bg-indigo-300 rounded-full blur-[120px] opacity-20"></div>
+
+            <div class="relative z-10 transform -rotate-6 -translate-x-8 md:-translate-x-12 translate-y-8 group">
+                <img src="{{ asset('images/hero-images-2.jpeg') }}" 
+                     class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover rounded-[2.5rem] md:rounded-[3rem] shadow-2xl border-4 border-white transition duration-500 group-hover:rotate-0"
+                     onerror="this.src='https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?auto=format&fit=crop&w=500&q=80'">
+                <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-white/90 backdrop-blur px-3 py-1.5 md:px-4 md:py-2 rounded-xl shadow-sm">
+                    <p class="text-[8px] md:text-[9px] font-black text-indigo-600 uppercase tracking-widest">Achievement</p>
+                </div>
+            </div>
+
+            <div class="relative z-20 transform rotate-2 -translate-x-4 -translate-y-8 group w-full max-w-[280px] md:max-w-none">
+                <img src="{{ asset('images/blockdiagram.png') }}" 
+                     class="w-full h-40 md:h-48 lg:h-64 object-cover rounded-[1.5rem] md:rounded-[2rem] shadow-2xl border-4 md:border-8 border-white transition duration-500 group-hover:rotate-0"
+                     onerror="this.src='https://images.unsplash.com/photo-1524704659694-9f754a17494a?auto=format&fit=crop&w=800&q=80'">
+                <div class="absolute -top-3 -right-3 md:-top-4 md:-right-4 bg-indigo-600 px-4 py-2 md:px-6 md:py-3 rounded-xl md:rounded-2xl shadow-xl shadow-indigo-200">
+                    <p class="text-[10px] font-black text-white uppercase tracking-widest text-center">System Architecture</p>
+                </div>
+            </div>
         </div>
 
-        <div class="relative h-[500px] flex items-center justify-center lg:justify-end">
-    
-    <div class="absolute -z-10 w-80 h-80 bg-indigo-300 rounded-full blur-[120px] opacity-20"></div>
-
-    <div class="relative z-10 transform -rotate-6 -translate-x-12 translate-y-8 group">
-        <img src="{{ asset('images/hero-images-2.jpeg') }}" 
-             class="w-64 h-64 lg:w-80 lg:h-80 object-cover rounded-[3rem] shadow-2xl border-4 border-white transition-all duration-500 group-hover:rotate-0"
-             onerror="this.src='https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?auto=format&fit=crop&w=500&q=80'">
-        <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-2xl shadow-sm">
-            <p class="text-[9px] font-black text-indigo-600 uppercase tracking-widest text-center">Achievement</p>
+        <div class="space-y-6 md:space-y-8 text-center lg:text-left order-2 lg:order-1">
+            <div class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 text-[9px] md:text-[10px] font-black rounded-full uppercase tracking-[0.2em]">
+                Smart Aquaculture Solutions
+            </div>
+            <h1 class="text-5xl md:text-6xl lg:text-8xl font-black text-slate-900 leading-[0.9] tracking-tighter uppercase italic">
+                AQUA<br><span class="text-indigo-600">GRID.</span>
+            </h1>
+            <p class="text-base md:text-lg text-slate-500 font-medium max-w-md mx-auto lg:mx-0 leading-relaxed">
+                Real-time water parameter monitoring system designed to produce premium quality milkfish seeds with high survival rates.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href="{{ route('guidelines') }}" class="px-8 md:px-10 py-4 md:py-5 bg-indigo-600 text-white font-black text-[10px] uppercase tracking-[0.2em] rounded-2xl hover:bg-indigo-700 transition shadow-2xl shadow-indigo-100 active:scale-95">
+                    Get Started
+                </a>
+                <a href="/health" class="px-8 md:px-10 py-4 md:py-5 bg-white text-slate-700 border border-slate-200 font-black text-[10px] uppercase tracking-[0.2em] rounded-2xl hover:bg-slate-50 transition shadow-lg active:scale-95">
+                    View Health
+                </a>
+            </div>
         </div>
-    </div>
 
-    <div class="relative z-20 transform rotate-2 -translate-x-4 -translate-y-8 group w-full">
-    <img src="{{ asset('images/blockdiagram.png') }}" 
-         class="w-full h-48 lg:h-64 object-cover rounded-[2rem] shadow-2xl border-8 border-white transition-all duration-500 group-hover:rotate-0"
-         onerror="this.src='https://images.unsplash.com/photo-1524704659694-9f754a17494a?auto=format&fit=crop&w=800&q=80'">
-    <div class="absolute -top-4 -right-4 bg-indigo-600 px-6 py-3 rounded-2xl shadow-xl shadow-indigo-200">
-        <p class="text-[10px] font-black text-white uppercase tracking-widest text-center">System Architecture</p>
-    </div>
-</div>
-
-</div>
     </main>
 
 </body>
